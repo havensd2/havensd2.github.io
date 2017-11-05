@@ -1,0 +1,54 @@
+*{
+    color: mediumpurple;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../poder-prove/images/background.leaves.jpeg);
+
+    width: 100%;
+    height: 100%;
+}
+.content{
+     display: flex;
+    width: 100%;
+}
+aside.left{
+    width:15%;
+    height:2000px;
+     background:green;
+
+}
+nav {
+    position: absolute;
+    width:75%;
+    background: darkgreen;
+    margin: auto;
+    text-align: center;
+    margin-left: 12.5%;
+}
+nav ol{
+    
+    
+}
+nav ol li{
+    padding: 5px;
+    margin: 5px;
+display: inline-block;
+}
+main{
+    background: tan;
+    height: 2000px;
+    width: 70%;  
+}
+main img{
+    width: inherit;
+    height:auto;
+}
+aside.right{
+    width:15%;
+    height:2000px;
+background:green;
+}
