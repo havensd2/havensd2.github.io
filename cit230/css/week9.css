@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+}
+
+header {
+    border: solid thin;
+    line-height: 50%;
+    background-image: url(../poder-prove/images/stones2133.jpg);
+    background-repeat: repeat;
+    margin: -15px 0 -10px;
+}
+
+nav {
+    color: #00FF00;
+    background-color: yellow;
+    border: solid thin green;
+    text-indent: 50px;
+}
+
+nav ol {
+    text-align: center
+}
+
+nav ol#rocks li {
+    display: inline;
+    padding: 1em;
+}
+
+nav ul li {
+    display: list-item;
+}
+
+main b {
+    color: red;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+main img {}
+
+footer {
+    color: green;
+}
+
+footer ul {
+    margin-top: 0;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 1em;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    font-family: cursive, arial;
+    font-size: x-large;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+h1.dropcap::first-letter {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: yellow;
+}
+
+h2 {
+    color: green;
+    font-family: sans-serif;
+    font-size: 10px;
+    border: solid thick;
+    text-align: center;
+}
+
+h4 {
+    color: green;
+}
+
+table {
+    color: red;
+    width: 50%;
+    font-size: 50%;
+    border: 5px solid red;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+caption {
+    font-size: 1.5em;
+    text-align: left;
+    color: rgb(7, 8, 45)
+}
+
+th {
+    letter-spacing: -.25em;
+    border: 1px solid black;
+}
+
+td {
+    text-decoration: line-through;
+}
+
+dd {
+    word-spacing: 1.5em;
+}
+
+span.docintro {
+    color: rgb(0, 0, 255);
+}
+
+.dropcap::first-letter {
+    color: purple;
+    font-size: 600%;
+}
+
+.sitebranding {
+    font-size: 6px;
+    background-color: aqua
+}
+
+.firstsentence {
+    font-weight: bold;
+}
+
+.fs2em {
+    font-size: 2em;
+}
+
+.fs2ex {
+    font-size: 2ex;
+}
+
+.fs24px {
+    font-size: 24px;
+}
+
+.fs120prcnt {
+    font-size: 120%;
+}
+
+.fs24pt {
+    font-size: 24pt;
+}
+
+.fsin {
+    font-size: .5in;
+}
+
+a:link {
+    color: #000000
+}
+
+a:visited {
+    color: rgb(0%, 100%, 0%);
+}
+
+a:hover {
+    background-color: white;
+}
+
+a:active {
+    color: rgb(0, 0, 255);
+}
+
+div#left-col {
+    float: left;
+    width: 33%;
+    background-color: red;
+    height: 2000px;
+}
+
+main {
+    float: left;
+    width: 34%;
+    background-color: green;
+    height: 2000px;
+}
+
+aside {
+    float: left;
+    width: 33%;
+    background-color: blue;
+    height: 2000px;
+}
+
+footer {
+    clear: left;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    background-color: lightblue;
+}
+
+/*apply colors to look like ppt*/
+
+/*
+            header {background-color:#9F9;} 
+            nav{background-color:yellow;}
+            div#left-col{background-color:#F66;}
+            main{background-color:green;}
+            div#right-col{background-color:green;}
+            aside{background-color:blue;}
+            footer{background-color:#0CF;}
+            body {background-color:#DDF; border: 1px solid blue;}

@@ -43,9 +43,13 @@ main{
     height: 2000px;
     width: 70%;  
 }
-main img{
-    width: inherit;
-    height:auto;
+main img #up{
+    width: 250px;
+    height:100px;
+}
+main img #temple{
+    width: 10px;
+    height:10px;
 }
 aside.right{
     width:15%;
