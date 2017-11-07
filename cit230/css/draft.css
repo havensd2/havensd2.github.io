@@ -13,7 +13,7 @@ body {
 }
 .content{
      display: flex;
-    width: 100%;
+    
 }
 aside.left{
     width:15%;
@@ -44,12 +44,13 @@ main{
     width: 70%;  
 }
 main img #up{
-    width: 250px;
-    height:100px;
+    width: 500px;
+    height: auto;
 }
 main img #temple{
-    width: 10px;
-    height:10px;
+      width: 500px;
+    height: 500px;
+    justify-content: flex-end;
 }
 aside.right{
     width:15%;
