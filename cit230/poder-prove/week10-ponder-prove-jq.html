@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week10-ponder-prove-completed-jq</title>
+    <link href="../../week10.css" rel="stylesheet" type="text/css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#p").click(function () {
+                alert("Hello, this is a paragraph");
+            });
+
+            $("#p1").mousedown(function () {
+                alert("Hello, this is a paragraph");
+            });
+
+           
+            
+            
+
+            $().(function () {
+                alert("Hello " + document.alertform.yourname.value + " make sure you select CIT!!!");
+            });
+
+            $().(function () {
+                    $()("background-color", "blue");
+                },
+                function () {
+                    $(this).css("background-color", "red");
+                });
+
+            $().hover(function () {
+                    $(this)(" YES! ");
+                },
+                function () {
+                    $(this).append(" I MEAN AFFIRMATIVE! ");
+                });
+
+            $().(function () {
+                $(this).css("background-color", "green");
+            });
+            $("#colorHide")(function () {
+                $(this)("slow");
+            });
+
+            $("#colorHide").click(function () {
+                $("#p30").css("background-color", "yellow");
+                $("#p31").css("background-color", "purple");
+                $("#p32").css("background-color", "green");
+            });
+
+            $().click(function () {
+                $().("slow");
+            });
+
+            $("#flip").dblclick(function () {
+                $("#panel").slideUp("slow");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="dropcap">The Rock Market</h1>
+        <p class="sitebranding">for all your rock needs visit <a href="http://the-rock-market.com">the Rock Market</a></p>
+        <h2>(tagline) Rock Success is in the <span class="docintro">Eyes of the Beholder &amp; Me!</span></h2>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/stones2133-w9.jpg">
+            <source media="(min-width:600px)" srcset="images/stones2163-w9.jpg">
+            <img src="images/rocks.png" alt="Flowers">
+        </picture>
+    </header>
+
+    <nav>
+        <ol id="rocks">
+            <li> <a href="foods-using-rocks.html">Foods Using Rocks</a> </li>
+            <li> <a href="history-of-rocks.html">History of Rocks</a> </li>
+            <li> <a href="rock-therapy.html">Rock Therapy</a> </li>
+            <li> <a href="rock-clothes.html">Rock Clothes</a></li>
+            <li><a href="rock-jewelry.html">Rock Jewelry</a></li>
+            <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
+        </ol>
+    </nav>
+
+    <div id="left-col">
+        <ul>
+            <li> <a href="rock-users.html">Rock Users</a> </li>
+            <li> <a href="the-agenda.html">Rock  Agenda</a> </li>
+            <li> <a href="rock-location.html">Rock Location</a> </li>
+            <li> <a href="rock-goals.html">Rock Goals</a> </li>
+        </ul>
+
+        <h1>Email form test</h1>
+
+        <form name="alertform">
+
+            <label for="yourname">Enter Your Full Name</label>
+            <br>
+            <input type="text" id="enterName" name="yourname" placeholder="Please enter your full name" required>
+            <br>
+            <br>  
+            <div>Click to slide down panel; double click to close</div>
+            <div>
+                <div style="background-color:#D94A38; width:20%; height:100px; margin-left:auto;margin-right:auto;">Hello</div>
+            </div>
+            <br>
+            <br>
+            <label>Do you like this website?</label>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="likeit" value="Yes" checked="checked" />
+            <label for="no">No</label>
+            <input type="radio" id="no" name="likeit" value="No">
+            <label for="notsure">Not Sure</label>
+            <input type="radio" id="notsure" name="likeit" value="NotSure">
+            <br>
+            <br>
+
+            <label for="range">Please rank how much you like the website:</label>
+            <input type="range" id="range" min="1" max="10" value="5">
+            <br>
+            <br>
+
+            <label>Select your major:</label>
+            <br>
+            <ul>
+                <li>
+                    <label for="cit">Computer Information Technology</label>
+                    <input type="checkbox" id="cit" value="Computer Information Technology" checked>
+                </li>
+                <br>
+                <li>
+                    <label for="acct">Web Design & Development</label>
+                    <input type="checkbox" id="acct" value="WDD">
+                </li>
+                <br>
+                <li>
+                    <label for="bm">Computer Science</label>
+                    <input type="checkbox" id="bm" value="CS">
+                </li>
+                <br>
+                <br>
+            </ul>
+
+            <label for="how">How did you find us?</label>
+            <select id="how">
+                <option value="">--Please Select--</option>
+                <option>Google</option>
+                <option>Yahoo</option>
+                <option>Link from a website</option>
+                <option>Word of mouth</option>
+                <option>Other</option>
+            </select>
+            <br>
+            <!--<button type="button" onClick="myChangeFont()">Click for bigger font!</button>-->
+            <!--<button type="button" onClick="myChangeFontBack()">Click for default font!</button>-->
+            <br>
+            <br>
+
+            <label for="age">Your Age</label>
+            <input type="number" id="age" placeholder="Please enter your age">
+            <br>
+            <br>
+
+            <label for="comment">Message:</label>
+            <br>
+            <textarea cols="40" rows="10" onfocus="this.value='';this.onfocus=null" required>Please type your message</textarea>
+            <br>
+            <br>
+
+            <label for="verify">&nbsp;</label>
+            <input type="button" Value="Verify">
+
+            <label for="submit">&nbsp;</label>
+            <button type="submit" name="Submit">Submit</button>
+
+            <label for="reset">&nbsp;</label>
+            <input type="reset" value="Reset">
+            <br>
+            <br>
+            Change the background color of all above buttons
+
+        </form>
+    </div>
+
+
+    <main>
+        <p style=font-weight:bold;color:yellow;font-size:24px;>Do you love <b>rocks </b> do you?</p>
+        <p> The <strong>Rock Market</strong> is an all-inclusive <em>bouquet</em> of &quot;rocks&quot; at their best. A participant can merely just dabble in any of the assorted featured gems or can completely immerse into all of the luxurious benefits from each of the market items. Whether your fancy be tasting a specialty rock food or indulging in the exquisite rock jewelry or adorning those stylish rock clothes, you will always be happy that you are considered among the &ldquo;rock elite<sup>1</sup>&rdquo; among your friends and peers. Come join and begin your journey into rock heaven! See you soon! </p>
+        <hr>
+        <figure><img src="images/rock-love.jpg" alt="photo of a person looking off a ship" title="enjoying computing and cruising while looking at rocks">
+            <figcaption class="dropcap">Rocks are great to view from a ship!</figcaption>
+        </figure>
+        <br>
+    </main>
+
+    <aside>
+        <p><a href="http://rocks-for-dummies.html">Rocks for dummies</a></p>
+        <p><a href="http://rocks-for-nerds.html">Rocks for nerds</a></p>
+        <p><a href="http://rocks-for-gurus.html">Rocks for gurus</a></p>
+        <p><a href="http://rocks-for-all.html">Rocks for all</a></p>
+        <br>
+        <br>
+        <br>
+        <audio src="audio/test-audio.ogg" controls autoplay>
+            <p>This browser does not support our audio format.</p>
+        </audio>
+        <br>
+        <br>
+        <video src="video/puppy.mp4" poster="images/puppy.jpg" width="100%" height="300" preload controls loop>
+            <p>A video of a puppy looking for rocks in the snow</p>
+        </video>
+        <br>
+        <br>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/XGSy3_Czz8k?playlist=XGSy3_Czz8k&loop=1">
+        </iframe>
+        <br>
+        <br>
+    </aside>
+
+    <footer>
+        <!--<h3>(the footer section)</h3>-->
+        <ul>
+            <li class="fs2em"><a href="contactinfo.html">&copy;Contact Information</a></li>
+            <li class="fs2ex"><a href="../contacts1/contact-info.html">Contact Information</a></li>
+            <li class="fs24px"><a href="contacts2/contact-info.html">Contact Information</a></li>
+            <li class="fs120prcnt"><a href="contacts2/contact-info.html">Contact Information</a></li>
+            <li class="fs24pt"><a href="week4-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
