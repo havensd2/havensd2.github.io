@@ -6,60 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>week10-ponder-prove-completed-jq</title>
     <link href="../../week10.css" rel="stylesheet" type="text/css">
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+<script
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
     </script>
-
+    
     <script>
-        $(document).ready(function () {
-            $("#p").click(function () {
+        $(document).ready(function() {
+            $("#p").click(function() {
                 alert("Hello, this is a paragraph");
             });
 
-            $("#p1").mousedown(function () {
+            $("#p1").mousedown(function() {
                 alert("Hello, this is a paragraph");
             });
 
-           
+            $("#enterName").click(function(){
+                alert("Hello, "+document.alertform.yourname.value+ "please type in your full name");
+                });
             
             
-
-            $().(function () {
+            $("#major").mouseenter(function() {
                 alert("Hello " + document.alertform.yourname.value + " make sure you select CIT!!!");
             });
 
-            $().(function () {
+            $(changeBcolor).hover(function() {
                     $()("background-color", "blue");
                 },
-                function () {
+                function() {
                     $(this).css("background-color", "red");
                 });
 
-            $().hover(function () {
-                    $(this)(" YES! ");
+            $("#yes").hover(function() {
+                    $(this).append(" YES! ");
                 },
-                function () {
+                function() {
                     $(this).append(" I MEAN AFFIRMATIVE! ");
                 });
 
-            $().(function () {
-                $(this).css("background-color", "green");
+
+            $("#colorHide").mouseleave(function() {
+                 $(this).css("background-color", "green");
             });
-            $("#colorHide")(function () {
-                $(this)("slow");
+            $("#colorHide").dblclick(function() {
+                $(this).hide("slow");
             });
 
-            $("#colorHide").click(function () {
+            $("#button").click(function() {
                 $("#p30").css("background-color", "yellow");
                 $("#p31").css("background-color", "purple");
                 $("#p32").css("background-color", "green");
             });
 
-            $().click(function () {
-                $().("slow");
+            $("#flip").click(function() {
+                $("#panel").slideDown("slow");
             });
 
-            $("#flip").dblclick(function () {
+            $("#flip").dblclick(function() {
                 $("#panel").slideUp("slow");
             });
         });
@@ -107,15 +109,15 @@
             <br>
             <input type="text" id="enterName" name="yourname" placeholder="Please enter your full name" required>
             <br>
-            <br>  
-            <div>Click to slide down panel; double click to close</div>
-            <div>
-                <div style="background-color:#D94A38; width:20%; height:100px; margin-left:auto;margin-right:auto;">Hello</div>
+            <br>
+            <div id="flip" >Click to slide down panel; double click to close</div>
+            <div id="panel">
+                <div id="changeBcolor" style="background-color:#D94A38; width:20%; height:100px; margin-left:auto;margin-right:auto;">Hello</div>
             </div>
             <br>
             <br>
             <label>Do you like this website?</label>
-            <label for="yes">Yes</label>
+            <label id="yes" for="yes">Yes</label>
             <input type="radio" id="yes" name="likeit" value="Yes" checked="checked" />
             <label for="no">No</label>
             <input type="radio" id="no" name="likeit" value="No">
@@ -133,7 +135,7 @@
             <br>
             <ul>
                 <li>
-                    <label for="cit">Computer Information Technology</label>
+                    <label id="major" for="cit">Computer Information Technology</label>
                     <input type="checkbox" id="cit" value="Computer Information Technology" checked>
                 </li>
                 <br>
@@ -172,21 +174,20 @@
 
             <label for="comment">Message:</label>
             <br>
-            <textarea cols="40" rows="10" onfocus="this.value='';this.onfocus=null" required>Please type your message</textarea>
+            <textarea id="colorHide" cols="40" rows="10" onfocus="this.value='';this.onfocus=null" required>Please type your message</textarea>
             <br>
             <br>
 
             <label for="verify">&nbsp;</label>
-            <input type="button" Value="Verify">
+            <input id="p30" type="button" Value="Verify">
 
             <label for="submit">&nbsp;</label>
-            <button type="submit" name="Submit">Submit</button>
+            <button id="p31" type="submit" name="Submit">Submit</button>
 
             <label for="reset">&nbsp;</label>
-            <input type="reset" value="Reset">
+            <input id="p32" type="reset" value="Reset">
             <br>
-            <br>
-            Change the background color of all above buttons
+            <br> <button>Change the background color of all above buttons</button>
 
         </form>
     </div>
@@ -238,5 +239,7 @@
     </footer>
 
 </body>
+    
+
 
 </html>
