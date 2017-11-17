@@ -28,11 +28,10 @@ aside.left {
 }
 
 nav {
-/*    position: absolute;*/
+    position:fixed;
         width: 75%;
     height: 34%;
     background: darkgreen;
-    background-attachment: fixed;
     margin-top: -18px;
     text-align: center;
     margin-left: 12.5%;
