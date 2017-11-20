@@ -53,12 +53,17 @@ nav ol li {
 }
 
 main {
+
     margin-top: 118px;
     background: tan;
     height: 2500px;
     width: 70%;
 }
+main #comment{
+    justify-content: flex-end;
+}
 h1, h2, h3, p{
+    width: 100%;
     padding: 10px;
 }
 aside.right {
@@ -66,6 +71,7 @@ aside.right {
     height: 2500px;
     /*background:green;*/
 }
+
 
 @media screen and (max-width: 600px) {
     main {
