@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Gardener's Grove Home</title>
+    <link type="text/css" rel="stylesheet" href="draft.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+
+
+    </script>
+</head>
+
+<body>
+
+    <br>
+    <nav class="box">
+        <h1><strong><a href="">Gardener's Grove</a></strong></h1>
+        <br>
+        <br>
+        <h2><a href="explore.html">Explore</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact-info.html">Contact Us</a>
+            <a href="bio.html">Biography</a>
+            <a href="cit230-links.html"> CIT230-links (Link)</a></h2>
+    </nav>
+    <div class="content">
+        <aside class="left">
+
+        </aside>
+        <main>
+            <script>
+                function myMap() {
+                    var myCenter = new google.maps.LatLng(39.935927, -121.019922);
+                    var mapCanvas = document.getElementById("map");
+                    var mapOptions = {
+
+                        center: new google.maps.LatLng(39.935927, -121.019922),
+                        zoom: 3,
+                        panControl: true,
+                        zoomControl: true,
+                        mapTypeControl: true,
+                        scaleControl: true,
+                        streetViewControl: false,
+                        overviewMapControl: true,
+                        rotateControl: true
+                    };
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+                    var marker = new google.maps.Marker({
+                        position: myCenter
+                    });
+                    marker.setMap(map)
+
+
+                    // Zoom to 9 when clicking on marker
+                    google.maps.event.addListener(marker, 'click', function() {
+                        var pos = Map.getZoom();
+                        map.setZoom(9);
+                        map.setCenter(marker.getPosition());
+                        window.setTimeout(function() {
+                            map.setZoom(pos);
+                        }, 3000);
+                    });
+                }
+
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa-F_ouluM_eOqT9cOPFiwClnJdp3xRIU&callback=myMap">
+
+
+            </script>
+
+            <div id="map" style="width:75%;height:500px;margin-top:100px;">
+            </div>
+            <div id="comment">
+                <input type="text" class="write" placeholder="Username" style="text: sans-serif">
+                <br>
+                <input type="checkbox" class="write">Display my Username
+                <br>
+                <textarea class="write" placeholder="Comment Here" style="height: 100px; width: 500px"></textarea>
+            </div>
+        </main>
+
+        <aside class="right">
+
+        </aside>
+    </div>
+    <footer class="box">
+        <a href="#">Back To Top</a>
+    </footer>
+</body>
+
+</html>

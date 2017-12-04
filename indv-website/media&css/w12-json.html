@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Gardener's Grove Home</title>
+    <link type="text/css" rel="stylesheet" href="draft.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    </script>
+</head>
+
+<body>
+
+    <br>
+    <nav class="box">
+        <h1><strong><a href="">Gardener's Grove</a></strong></h1>
+        <br>
+        <br>
+        <h2><a href="explore.html">Explore</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact-info.html">Contact Us</a>
+            <a href="bio.html">Biography</a>
+            <a href="cit230-links.html"> CIT230-links (Link)</a></h2>
+    </nav>
+    <div class="content">
+        <aside class="left">
+
+        </aside>
+        <main>
+            <h2>Locations</h2>
+
+            <body onload="load()">
+    <div id="map" style="width:640px; height:480px;"></div>
+
+
+    <script>
+        function load() {
+var data = '[{"name": "Gridley","location": [39.363240, -121.687941]},{"name": "Yuba City","location": [39.141894, -121.634551]}, {"name": "Chico","location": [39.745322, -121.831628]}] ';
+            
+            // Initialize Google Maps and load the data
+            const mapOptions = {
+                center: new google.maps.LatLng(39.479269, -121.691690),
+                zoom: 9
+            }
+            const map = new google.maps.Map(document.getElementById("map"),mapOptions);
+
+            var mydata = JSON.parse(data);
+
+            for( x=0 ; x<3 ; x++) {
+                let marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(mydata[x].location[0],mydata[x].location[1]),title:mydata[x].name 
+                })
+            }
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfu40xsNorGjLIcte1HHW6iDZlNEkfmz8&sensor=true"></script>
+            <div id="comment">
+                <input type="text" class="write" placeholder="Username" style="text: sans-serif">
+                <br>
+                <input type="checkbox" class="write">Display my Username
+                <br>
+                <textarea class="write" placeholder="Comment Here" style="height: 100px; width: 500px"></textarea>
+            </div>
+        </main>
+
+        <aside class="right">
+            
+        </aside>
+    </div>
+    <footer class="box">
+        <a href="#">Back To Top</a>
+    </footer>
+</body>
+</html>
