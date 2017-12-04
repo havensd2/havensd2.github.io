@@ -40,6 +40,7 @@ nav {
     text-align: center;
     margin-left: 12.5%;
     padding: 24px;
+    z-index: 1;
 }
 
 nav h1 {

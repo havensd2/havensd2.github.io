@@ -31,45 +31,21 @@
         </aside>
         <main>
             <script>
-                function myMap() {
-                    var myCenter = new google.maps.LatLng(39.935927, -121.019922);
-                    var mapCanvas = document.getElementById("map");
-                    var mapOptions = {
-
-                        center: new google.maps.LatLng(39.935927, -121.019922),
-                        zoom: 3,
-                        panControl: true,
-                        zoomControl: true,
-                        mapTypeControl: true,
-                        scaleControl: true,
-                        streetViewControl: false,
-                        overviewMapControl: true,
-                        rotateControl: true
-                    };
-                    var map = new google.maps.Map(mapCanvas, mapOptions);
-                    var marker = new google.maps.Marker({
-                        position: myCenter
-                    });
-                    marker.setMap(map)
-
-
-                    // Zoom to 9 when clicking on marker
-                    google.maps.event.addListener(marker, 'click', function() {
-                        var pos = Map.getZoom();
-                        map.setZoom(9);
-                        map.setCenter(marker.getPosition());
-                        window.setTimeout(function() {
-                            map.setZoom(pos);
-                        }, 3000);
-                    });
-                }
-
-            </script>
-
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa-F_ouluM_eOqT9cOPFiwClnJdp3xRIU&callback=myMap">
-
-
-            </script>
+      function forestMap() {
+        var plumas = {lat: 39.935925, lng: -121.020035};
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: plumas
+        });
+        var marker = new google.maps.Marker({
+          position: plumas,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCERL9CpL-XXVvY3bCG84YcAkmjMyigGdc&callback=forestMap">
+    </script>
 
             <div id="map" style="width:75%;height:500px;margin-top:100px;">
             </div>
