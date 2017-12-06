@@ -82,21 +82,40 @@ main {
 h3{
     
 }
+main ol{
+    margin: 20px;
+}
 
 
     width: 400px;
     height: 265px;
 
 
-#fbox1{
-     display: inline-block;
-    
-/*
-    padding-left: 10%;
-    margin-right: auto;
-*/
-/*    padding-left: 10%;*/
-/*    height: 30px; */
+.fbox{
+    display: flex;
+    margin: 0 auto;
+    margin-left: 25%;
+}
+.fbox a{
+    flex: 1;
+}
+h4{
+    display: inline-block;
+}
+#t{
+    position:relative;
+ left: 200px;
+}
+#r{
+    position: relative;
+left: 550px;
+}
+#g{
+    position: relative;
+    left: 200px;
+}#m{
+    position: relative;
+    left: 450px;
 }
 .textbox{
     display: inline-block;
@@ -113,15 +132,6 @@ h3{
     height: 186px;
 } 
 
-#fbox2{
-     display: inline-block;
-
-/*
-    margin-left: auto;
-    margin-right: auto;
-*/
-/*    height: 30px; */
-}
 .textbox2{
     display:inline-block;
 }
