@@ -11,6 +11,14 @@ html {
 }
 h1{
     float: left;
+    
+}
+a{
+  color: saddlebrown;
+}
+a:hover{
+    text-emphasis: text-emphasis-style;
+    color: burlywood;
 }
 body {
     background-image: url(background.leaves.jpeg);
@@ -26,16 +34,21 @@ aside.left {
     height: 2500px;
     /*     background:green;*/
 }
+aside #breadcrumb{
+    background-color: beige;
+    margin-top: 118px;
+    height: 15%;
+}
 
 nav {
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px;
     position:fixed;
     width: 75%;
-    height: ;
+    height: auto;
     background: linear-gradient(0deg, #015000, #00AB00);
     text-shadow: 3px 3px 9px black;
-    color: midnightblue;
+    color: saddlebrown;
     margin-top: -18px;
     text-align: center;
     margin-left: 12.5%;
@@ -54,8 +67,11 @@ nav ol li {
     margin: 5px;
     display: inline-block;
 }
-
+aside.left{
+    color: saddlebrown;
+}
 main {
+    display: inline-block;
     color: dimgrey;
     border-width: thick;
     margin-top: 118px;
@@ -63,15 +79,60 @@ main {
     height: 2500px;
     width: 70%;
 }
-div#comment{
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 10px;
+h3{
+    
+}
+
+
+    width: 400px;
+    height: 265px;
+
+
+#fbox1{
+     display: inline-block;
+    
+/*
+    padding-left: 10%;
+    margin-right: auto;
+*/
+/*    padding-left: 10%;*/
+/*    height: 30px; */
+}
+.textbox{
+    display: inline-block;
+}
+
+#trees{
+    margin:5%;
+      width: 300px;
+    height: 186px;
+}
+#roots{
+  margin:5%; 
+     width: 300px;
+    height: 186px;
+} 
+
+#fbox2{
+     display: inline-block;
+
+/*
+    margin-left: auto;
+    margin-right: auto;
+*/
+/*    height: 30px; */
+}
+.textbox2{
+    display:inline-block;
+}
+#grains{
+    margin: 5%;
+}
+#shrooms{
+    margin: 5%;
 }
 h1, h2, h3, p{
-    flex-direction: column;
-    flex-wrap: wrap;
+
     width: 100%;
     padding: 10px;
 }
@@ -79,6 +140,10 @@ aside.right {
     width: 15%;
     height: 2500px;
     /*background:green;*/
+}
+div #comment{
+    position: absolute;
+
 }
 
 
@@ -100,13 +165,18 @@ aside.right {
     nav {
         margin: 0;
         position: initial;
-        height: auto;
+        height: 10;
         width: 100%;
+        
+        
     }
     nav ol li {
         margin: 1px;
         padding: 1px;
         display: inline-block;
-
+    }
+    div#comment{
+        display: none;
+            
     }
 }
